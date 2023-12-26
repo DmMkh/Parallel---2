@@ -93,7 +93,6 @@ int main(int argc, char *argv[])
 	if (my_rank == 0)
 	{
 		ff = fopen("result.txt", "w");
-		setvbuf(ff, NULL, _IOFBF, 65536 * 2);
 		for (i = 0; i < ISIZE; i++)
 		{
 			for (j = 0; j < JSIZE; j++)
